@@ -7,11 +7,18 @@ class cliente(models.Model):
     apellido = models.CharField(max_length=50)
     edad = models.IntegerField()
     dui = models.IntegerField()
+
+    def __str__(self):
+        return f"cliente: {self.id}"
+
 #Tabla Area
 class area(models.Model):
     id = models.AutoField(primary_key=True)
     nombre_Area = models.CharField(max_length=80)
     descripcion = models.CharField(max_length=300)
+
+    def __str__(self):
+        return f"area: {self.id}"
 
 #Tabla empleado
 class empleado(models.Model):
@@ -20,6 +27,9 @@ class empleado(models.Model):
     apellido = models.CharField(max_length=50)
     Edad = models.IntegerField()
     areaId = models.ForeignKey(area, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"empleado: {self.id}"
 
 #Tabla venta
 class venta(models.Model):
