@@ -7,3 +7,5 @@ Edwin Alexander Villalta Ortiz-smss022022
 --Instrucciones--
 Al momento de correr el servidor y le aparece que no encuentra el archivo
 solamente ponga: "../vistaUrl" posterior a la direccion que brinda el servidor.
+
+En cuanto a la base de datos, la descarga y la importa en su PgAdmin
